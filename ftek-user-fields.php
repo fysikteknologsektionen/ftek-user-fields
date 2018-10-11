@@ -60,6 +60,8 @@ function ftek_uf_manage_users_custom_column( $output, $column_name, $user_id ) {
 add_action( 'show_user_profile', 'user_meta_show_form_field_class' );
 add_action( 'edit_user_profile', 'user_meta_show_form_field_class' ); // Show class for administrators
 function user_meta_show_form_field_class( $user ) {
+    global $pagenow;
+    if ($pagenow == 'profile.php') {
     $user_ID = $user->ID;
     $class = get_user_meta($user_ID, 'class' , true);
     if (!empty($class)) {
@@ -93,7 +95,7 @@ function user_meta_show_form_field_class( $user ) {
          });
     </script>
     <?php }
-
+    }
 }
 
 
