@@ -3,6 +3,7 @@
 Plugin Name: Ftek User Fields
 Description: Extra user fields for ftek functionality
 Author: Johan Winther (johwin)
+Version: 1.0.1
 Text Domain: ftek_uf
 Domain Path: /languages
 GitHub Plugin URI: Fysikteknologsektionen/ftek-user-fields
